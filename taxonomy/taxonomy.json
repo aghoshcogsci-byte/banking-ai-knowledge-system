@@ -1,0 +1,31 @@
+{
+    "Card Issues": [
+        "activate_card",
+        "lost_card",
+        "card_not_working",
+        "card_payment_wrong_exchange_rate",
+        "card_delivery_estimate"
+    ],
+    "Account Management": [
+        "close_account",
+        "edit_personal_details",
+        "verify_identity",
+        "country_support"
+    ],
+    "Payments & Transfers": [
+        "transfer_failed",
+        "pending_transfer",
+        "refund_not_showing",
+        "declined_transfer"
+    ],
+    "Security": [
+        "compromised_card",
+        "pin_blocked",
+        "card_swallowed"
+    ],
+    "Fees & Charges": [
+        "atm_support",
+        "exchange_rate",
+        "wrong_amount_charged"
+    ]
+}

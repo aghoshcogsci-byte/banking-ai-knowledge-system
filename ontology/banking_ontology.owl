@@ -1,0 +1,263 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="urn:webprotege:ontology:0d59f211-3a7a-48fe-b031-e894c62d314f#"
+     xml:base="urn:webprotege:ontology:0d59f211-3a7a-48fe-b031-e894c62d314f"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="urn:webprotege:ontology:0d59f211-3a7a-48fe-b031-e894c62d314f"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://webprotege.stanford.edu/R7OgCmgDq0sgD9CUiBMAsKo -->
+
+    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/R7OgCmgDq0sgD9CUiBMAsKo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://webprotege.stanford.edu/RIDPpdJyckkHXHTVu4lfPl"/>
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/R728wejItvH6VLq2UhEG8A5"/>
+        <rdfs:label xml:lang="owl (rdf/xml)">requiresVerification</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RBokHqgE8cJ0cdGzxIIGQWz -->
+
+    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/RBokHqgE8cJ0cdGzxIIGQWz">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://webprotege.stanford.edu/R8y9wjGOEsutYrRlEzTIQMr"/>
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/R8W5eAISjF3rjMTzWKnWpCb"/>
+        <rdfs:label xml:lang="owl (rdf/xml)">relatesTo</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RCAjHh9FG4Dy1BRye1jwm0l -->
+
+    <owl:ObjectProperty rdf:about="http://webprotege.stanford.edu/RCAjHh9FG4Dy1BRye1jwm0l">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://webprotege.stanford.edu/R8y9wjGOEsutYrRlEzTIQMr"/>
+        <rdfs:range rdf:resource="http://webprotege.stanford.edu/RIDPpdJyckkHXHTVu4lfPl"/>
+        <rdfs:label xml:lang="owl (rdf/xml)">triggers</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://webprotege.stanford.edu/R4eJQxLNeDlrtLADZy1Qo5 -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R4eJQxLNeDlrtLADZy1Qo5">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R8W5eAISjF3rjMTzWKnWpCb"/>
+        <rdfs:label xml:lang="owl (rdf/xml)">CreditCard</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R728wejItvH6VLq2UhEG8A5 -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R728wejItvH6VLq2UhEG8A5">
+        <rdfs:label xml:lang="owl (rdf/xml)">Verification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R7AoIvYuvuFEFqe3rlVc81G -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R7AoIvYuvuFEFqe3rlVc81G">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R728wejItvH6VLq2UhEG8A5"/>
+        <rdfs:label xml:lang="owl (rdf/xml)">IdentityVerification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R7RaKTISHgPPJQIHUErqe60 -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R7RaKTISHgPPJQIHUErqe60">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RIDPpdJyckkHXHTVu4lfPl"/>
+        <rdfs:label xml:lang="owl (rdf/xml)">CardActivationProcess</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R7cbq2XPfstpg0Pz131OkBj -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R7cbq2XPfstpg0Pz131OkBj">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RIDPpdJyckkHXHTVu4lfPl"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://webprotege.stanford.edu/R7OgCmgDq0sgD9CUiBMAsKo"/>
+                <owl:someValuesFrom rdf:resource="http://webprotege.stanford.edu/R7AoIvYuvuFEFqe3rlVc81G"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="owl (rdf/xml)">CardReplacementProcess</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R833ZpB03ypsieqfNaBJCGo -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R833ZpB03ypsieqfNaBJCGo">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R8W5eAISjF3rjMTzWKnWpCb"/>
+        <rdfs:label xml:lang="owl (rdf/xml)">Loan</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R8W5eAISjF3rjMTzWKnWpCb -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R8W5eAISjF3rjMTzWKnWpCb">
+        <rdfs:label xml:lang="owl (rdf/xml)">Product</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R8mvEPoWgEqzX7xV8M1CJHa -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R8mvEPoWgEqzX7xV8M1CJHa">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RIDPpdJyckkHXHTVu4lfPl"/>
+        <rdfs:label xml:lang="owl (rdf/xml)">AccountClosureProcess</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R8y9wjGOEsutYrRlEzTIQMr -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R8y9wjGOEsutYrRlEzTIQMr">
+        <rdfs:label xml:lang="owl (rdf/xml)">Intent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R92viICWPBFnJDaNayPOEE7 -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R92viICWPBFnJDaNayPOEE7">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R728wejItvH6VLq2UhEG8A5"/>
+        <rdfs:label xml:lang="owl (rdf/xml)">SecurityCheck</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/R9aSpA3ge24YJorZShHK5vi -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/R9aSpA3ge24YJorZShHK5vi">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R8y9wjGOEsutYrRlEzTIQMr"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://webprotege.stanford.edu/RBokHqgE8cJ0cdGzxIIGQWz"/>
+                <owl:someValuesFrom rdf:resource="http://webprotege.stanford.edu/R4eJQxLNeDlrtLADZy1Qo5"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://webprotege.stanford.edu/RCAjHh9FG4Dy1BRye1jwm0l"/>
+                <owl:someValuesFrom rdf:resource="http://webprotege.stanford.edu/R7cbq2XPfstpg0Pz131OkBj"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="owl (rdf/xml)">LostCardIntent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RBH1X3yhpqkJ8Mapo4vTNf5 -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RBH1X3yhpqkJ8Mapo4vTNf5">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R8y9wjGOEsutYrRlEzTIQMr"/>
+        <rdfs:label xml:lang="owl (rdf/xml)">CloseAccountIntent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RBYoC6iDZ6Y5jYiBOu1UGgM -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RBYoC6iDZ6Y5jYiBOu1UGgM">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/RIDPpdJyckkHXHTVu4lfPl"/>
+        <rdfs:label xml:lang="owl (rdf/xml)">TransferInvestigationProcess</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RC3LmVA66NyVXL8gfIG6pTA -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RC3LmVA66NyVXL8gfIG6pTA">
+        <rdfs:label xml:lang="owl (rdf/xml)">Customer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RCHH9w1wylII5jmA4p8s1Lo -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RCHH9w1wylII5jmA4p8s1Lo">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R728wejItvH6VLq2UhEG8A5"/>
+        <rdfs:label xml:lang="owl (rdf/xml)">TwoFactorAuthentication</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RCHcMZhMpBZjDicOWSomziW -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RCHcMZhMpBZjDicOWSomziW">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R8y9wjGOEsutYrRlEzTIQMr"/>
+        <rdfs:label xml:lang="owl (rdf/xml)">ActivateCardIntent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RCNz7JWl0YEGhB3SwXqY7sv -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RCNz7JWl0YEGhB3SwXqY7sv">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R8y9wjGOEsutYrRlEzTIQMr"/>
+        <rdfs:label xml:lang="owl (rdf/xml)">TransferIssueIntent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RDFkRdotaWf44PdFl0TLf6s -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RDFkRdotaWf44PdFl0TLf6s">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R8y9wjGOEsutYrRlEzTIQMr"/>
+        <rdfs:label xml:lang="owl (rdf/xml)">ExchangeRateInquiryIntent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RIDPpdJyckkHXHTVu4lfPl -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RIDPpdJyckkHXHTVu4lfPl">
+        <rdfs:label xml:lang="owl (rdf/xml)">ServiceFlow</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://webprotege.stanford.edu/RMnH3PDFahW8Pp19r9Flvg -->
+
+    <owl:Class rdf:about="http://webprotege.stanford.edu/RMnH3PDFahW8Pp19r9Flvg">
+        <rdfs:subClassOf rdf:resource="http://webprotege.stanford.edu/R8W5eAISjF3rjMTzWKnWpCb"/>
+        <rdfs:label xml:lang="owl (rdf/xml)">BankAccount</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.13) https://github.com/owlcs/owlapi -->
+

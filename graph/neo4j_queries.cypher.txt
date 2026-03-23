@@ -1,0 +1,60 @@
+// =============================
+// DATABASE RESET
+// =============================
+
+MATCH (n) DETACH DELETE n;
+
+
+// =============================
+// CONSTRAINTS
+// =============================
+
+CREATE CONSTRAINT intent_name IF NOT EXISTS
+FOR (i:Intent) REQUIRE i.name IS UNIQUE;
+
+CREATE CONSTRAINT product_name IF NOT EXISTS
+FOR (p:Product) REQUIRE p.name IS UNIQUE;
+
+
+// =============================
+// NODE CREATION
+// =============================
+
+CREATE 
+(i:Intent {name:'LostCard'}),
+(p:Product {name:'CreditCard'}),
+(s:ServiceFlow {name:'CardReplacement'}),
+(v:Verification {name:'IdentityVerification'});
+
+
+// =============================
+// RELATIONSHIPS
+// =============================
+
+MATCH 
+(i:Intent {name:'LostCard'}),
+(p:Product {name:'CreditCard'}),
+(s:ServiceFlow {name:'CardReplacement'}),
+(v:Verification {name:'IdentityVerification'})
+
+CREATE 
+(i)-[:RELATES_TO]->(p),
+(i)-[:TRIGGERS]->(s),
+(s)-[:REQUIRES]->(v);
+
+
+// =============================
+// TEST QUERIES
+// =============================
+
+// What service is triggered?
+MATCH (i:Intent {name:'LostCard'})-[:TRIGGERS]->(s)
+RETURN s.name;
+
+// What verification is required?
+MATCH (i:Intent {name:'LostCard'})-[:TRIGGERS]->(s)-[:REQUIRES]->(v)
+RETURN v.name;
+
+// Full reasoning chain
+MATCH (i:Intent {name:'LostCard'})-[:TRIGGERS]->(s)-[:REQUIRES]->(v)
+RETURN i.name, s.name, v.name;

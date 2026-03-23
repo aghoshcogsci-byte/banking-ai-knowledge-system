@@ -1,0 +1,8 @@
+pandas
+numpy
+scikit-learn
+nltk
+neo4j
+groq
+joblib
+python-dotenv
